@@ -1,3 +1,4 @@
+import 'package:clean_architecture_example/user/usecase/send_welcome_email_usecase.dart';
 import 'package:clean_architecture_example/user/usecase/user_dto.dart';
 import 'package:clean_architecture_example/user/usecase/add_user_usecase.dart';
 import 'package:clean_architecture_example/user/usecase/delete_user_usecase.dart';
@@ -11,11 +12,13 @@ class UserController {
   final GetUsers getUsersUsecase;
   final DeleteUser deleteUserUsecase;
   final UpdateUserPassword updatePasswordUsecase;
+  final SendWelcomeEmail sendWelcomeEmailUsecase;
 
-  UserController(this.addUserUsecase, this.getUsersUsecase, this.deleteUserUsecase, this.updatePasswordUsecase);
+  UserController(this.addUserUsecase, this.getUsersUsecase, this.deleteUserUsecase, this.updatePasswordUsecase, this.sendWelcomeEmailUsecase);
 
   Future<void> addUser(UserDTO user) async {
     await addUserUsecase.call(user);
+    await sendWelcomeEmailUsecase.call(user);
   }
 
   Future<List<UserDTO>> getUsers() async {
