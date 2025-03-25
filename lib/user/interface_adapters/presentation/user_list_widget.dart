@@ -1,7 +1,7 @@
 import 'package:clean_architecture_example/main.dart';
-import 'package:clean_architecture_example/user/controller/user_controller.dart';
-import 'package:clean_architecture_example/user/presentation/user_add_widget.dart';
-import 'package:clean_architecture_example/user/presentation/user_change_password_widget.dart';
+import 'package:clean_architecture_example/user/interface_adapters/controller/user_controller.dart';
+import 'package:clean_architecture_example/user/interface_adapters/presentation/user_add_widget.dart';
+import 'package:clean_architecture_example/user/interface_adapters/presentation/user_change_password_widget.dart';
 import 'package:clean_architecture_example/user/usecase/user_dto.dart';
 import 'package:flutter/material.dart';
 

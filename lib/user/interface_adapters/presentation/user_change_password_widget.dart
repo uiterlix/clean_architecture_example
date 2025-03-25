@@ -1,5 +1,5 @@
 import 'package:clean_architecture_example/main.dart';
-import 'package:clean_architecture_example/user/controller/user_controller.dart';
+import 'package:clean_architecture_example/user/interface_adapters/controller/user_controller.dart';
 import 'package:flutter/material.dart';
 
 class UserChangePasswordWidget extends StatefulWidget {

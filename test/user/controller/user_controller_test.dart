@@ -1,4 +1,4 @@
-import 'package:clean_architecture_example/user/controller/user_controller.dart';
+import 'package:clean_architecture_example/user/interface_adapters/controller/user_controller.dart';
 import 'package:clean_architecture_example/user/usecase/add_user_usecase.dart';
 import 'package:clean_architecture_example/user/usecase/delete_user_usecase.dart';
 import 'package:clean_architecture_example/user/usecase/get_users_usecase.dart';
